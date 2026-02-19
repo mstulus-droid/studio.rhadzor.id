@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -186,6 +186,7 @@
             );
             -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
             -webkit-mask-composite: xor; 
+            mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
             mask-composite: exclude;
             opacity: 0; 
             transition: opacity 0.3s ease; 
@@ -372,29 +373,22 @@
             <span class="font-bold tracking-tighter">RHADZOR.ID</span>
         </a>
         <div class="flex items-center gap-6">
-            <span class="text-[var(--neon-pink)] font-bold">APPS</span>
-            <a href="games.html" class="hover:text-[var(--neon-cyan)]">GAMES</a>
-            <a href="index.html#contact" class="hover:text-[var(--neon-cyan)]">CONTACT</a>
+            <span class="text-[var(--neon-pink)] font-bold" data-key="nav_apps">APPS</span>
+            <a href="games.html" class="hover:text-[var(--neon-cyan)]" data-key="nav_games">GAMES</a>
+            <a href="index.html#contact" class="hover:text-[var(--neon-cyan)]" data-key="nav_contact">CONTACT</a>
         </div>
     </nav>
 
-    <section class="min-h-[60vh] flex flex-col justify-center items-center text-center px-4 relative z-10 w-full mt-10">
+    <section class="min-h-[60vh] flex flex-col justify-center items-center text-center px-4 relative z-10 w-full mt-10 hero-section">
         <div class="absolute inset-0 bg-grid z-0"></div>
         <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-tr from-blue-900/20 via-emerald-900/10 to-rose-900/20 rounded-full blur-[120px] -z-10"></div>
 
-        <div class="overflow-hidden mb-6 z-10">
-            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/10 bg-white/5 backdrop-blur">
-                <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 status-pulse"></span>
-                <span class="text-[10px] font-mono tracking-[0.2em] text-white/70">TOOLKIT</span>
-            </div>
-        </div>
-
         <h1 class="font-sans text-5xl md:text-7xl lg:text-8xl font-black leading-[0.9] tracking-tighter mb-8 relative z-10">
-            <span class="block text-transparent bg-clip-text bg-gradient-to-b from-white via-white to-white/40 glitch-text" data-text="TOOLS THAT">TOOLS THAT</span>
-            <span class="block text-transparent bg-clip-text bg-gradient-to-b from-white via-white to-white/40 mt-2">JUST WORK</span>
+            <span class="block text-transparent bg-clip-text bg-gradient-to-b from-white via-white to-white/40 glitch-text" data-text="TOOLS THAT" data-key="hero_title_1">TOOLS THAT</span>
+            <span class="block text-transparent bg-clip-text bg-gradient-to-b from-white via-white to-white/40 mt-2" data-key="hero_title_2">JUST WORK</span>
         </h1>
 
-        <p class="font-mono text-slate-400 max-w-lg text-sm leading-relaxed mx-auto z-10">
+        <p class="font-mono text-slate-400 max-w-lg text-sm leading-relaxed mx-auto z-10" data-key="hero_desc">
             No bloat, no BS—just tools that help you stay organized and in control.
         </p>
     </section>
@@ -415,15 +409,15 @@
                                     </div>
                                     <span class="font-mono text-xs text-rose-400 tracking-wider">MODULE_01</span>
                                 </div>
-                                <h2 class="font-sans text-4xl md:text-5xl font-bold mb-3 text-white group-hover:text-rose-400 transition-colors duration-300">KALEINDO.</h2>
-                                <p class="text-slate-400 leading-relaxed text-sm md:text-base">
+                                <h2 class="font-sans text-4xl md:text-5xl font-bold mb-3 text-white group-hover:text-rose-400 transition-colors duration-300" data-key="app1_title">KALEINDO.</h2>
+                                <p class="text-slate-400 leading-relaxed text-sm md:text-base" data-key="app1_desc">
                                     The ultimate Indonesian calendar. Complete with Hijri & Javanese (Weton) dates, National Holidays, customizable themes, and integrated notes. <br>Simple & beautiful.
                                 </p>
                             </div>
                             
                             <div class="mt-6 flex gap-3">
                                 <a href="https://kaleindo.rhadzor.id" target="_blank" class="magnetic-btn inline-flex items-center gap-3 px-6 py-3 bg-white text-black font-bold rounded-full hover:bg-rose-500 hover:text-white transition-all duration-300 active:scale-95 shadow-[0_0_20px_rgba(255,255,255,0.3)] hover:shadow-[0_0_30px_rgba(244,63,94,0.5)] w-fit text-sm group/btn">
-                                    <span>LAUNCH APP</span> 
+                                    <span data-key="btn_launch">LAUNCH APP</span> 
                                     <i class="fas fa-external-link-alt group-hover/btn:translate-x-1 transition-transform"></i>
                                 </a>
                             </div>
@@ -435,11 +429,11 @@
                             
                             <div class="absolute bottom-4 left-4 right-4 flex justify-between items-end z-20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 translate-y-4 group-hover:translate-y-0">
                                 <div class="bg-black/60 backdrop-blur px-3 py-2 rounded-lg border border-white/10">
-                                    <div class="text-[10px] font-mono text-rose-400 mb-1">ACTIVE USERS</div>
+                                    <div class="text-[10px] font-mono text-rose-400 mb-1" data-key="stat_users">ACTIVE USERS</div>
                                     <div class="text-lg font-bold font-mono">12,847</div>
                                 </div>
                                 <div class="bg-black/60 backdrop-blur px-3 py-2 rounded-lg border border-white/10">
-                                    <div class="text-[10px] font-mono text-emerald-400 mb-1">RATING</div>
+                                    <div class="text-[10px] font-mono text-emerald-400 mb-1" data-key="stat_rating">RATING</div>
                                     <div class="text-lg font-bold font-mono">4.9★</div>
                                 </div>
                             </div>
@@ -462,15 +456,15 @@
                                     <div class="w-10 h-10 rounded-lg bg-emerald-500/20 border border-emerald-500/30 flex items-center justify-center text-emerald-400 font-bold font-mono status-pulse">0</div>
                                     <span class="font-mono text-xs text-emerald-400 tracking-wider">MODULE_02</span>
                                 </div>
-                                <h2 class="font-sans text-4xl md:text-5xl font-bold mb-3 text-white group-hover:text-emerald-400 transition-colors duration-300">Nolkan.</h2>
-                                <p class="text-slate-400 leading-relaxed text-sm md:text-base">
+                                <h2 class="font-sans text-4xl md:text-5xl font-bold mb-3 text-white group-hover:text-emerald-400 transition-colors duration-300" data-key="app2_title">Nolkan.</h2>
+                                <p class="text-slate-400 leading-relaxed text-sm md:text-base" data-key="app2_desc">
                                     Your money, your rules. Assign every dollar. Track every expense. See exactly where your money goes. Zero confusion, full control.
                                 </p>
                             </div>
                             
                             <div class="mt-6">
                                 <button class="magnetic-btn inline-flex items-center gap-3 px-6 py-3 border border-white/20 text-white/50 font-bold rounded-full cursor-not-allowed w-fit text-sm relative overflow-hidden group/btn">
-                                    <span class="relative z-10 flex items-center gap-2">
+                                    <span class="relative z-10 flex items-center gap-2" data-key="btn_coming_soon">
                                         <i class="fas fa-lock text-xs"></i>
                                         COMING SOON
                                     </span>
@@ -488,7 +482,7 @@
                                     <span class="font-mono text-lg text-white font-bold">0.00</span>
                                 </div>
                                 <div class="mt-3 text-center">
-                                    <div class="text-[10px] font-mono text-emerald-400">BETA SIGNUP</div>
+                                    <div class="text-[10px] font-mono text-emerald-400" data-key="stat_beta">BETA SIGNUP</div>
                                 </div>
                             </div>
 
@@ -514,15 +508,15 @@
                                     </div>
                                     <span class="font-mono text-xs text-blue-400 tracking-wider">MODULE_03</span>
                                 </div>
-                                <h2 class="font-sans text-4xl md:text-5xl font-bold mb-3 text-white group-hover:text-blue-400 transition-colors duration-300">TaskFlow.</h2>
-                                <p class="text-slate-400 leading-relaxed text-sm md:text-base">
+                                <h2 class="font-sans text-4xl md:text-5xl font-bold mb-3 text-white group-hover:text-blue-400 transition-colors duration-300" data-key="app3_title">TaskFlow.</h2>
+                                <p class="text-slate-400 leading-relaxed text-sm md:text-base" data-key="app3_desc">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Smart task management with AI prioritization.
                                 </p>
                             </div>
                             
                             <div class="mt-6">
                                 <button class="magnetic-btn inline-flex items-center gap-3 px-6 py-3 border border-white/20 text-white/50 font-bold rounded-full cursor-not-allowed w-fit text-sm relative overflow-hidden group/btn">
-                                    <span class="relative z-10 flex items-center gap-2">
+                                    <span class="relative z-10 flex items-center gap-2" data-key="btn_development">
                                         <i class="fas fa-clock text-xs"></i>
                                         IN DEVELOPMENT
                                     </span>
@@ -540,7 +534,7 @@
                                     <div class="absolute inset-0 rounded-full border-t-2 border-blue-500 animate-spin"></div>
                                     <i class="fas fa-code text-2xl text-blue-400"></i>
                                 </div>
-                                <div class="text-[10px] font-mono text-blue-400 tracking-widest">BUILDING...</div>
+                                <div class="text-[10px] font-mono text-blue-400 tracking-widest" data-key="stat_building">BUILDING...</div>
                             </div>
                         </div>
                     </div> 
@@ -562,15 +556,15 @@
                                     </div>
                                     <span class="font-mono text-xs text-purple-400 tracking-wider">MODULE_04</span>
                                 </div>
-                                <h2 class="font-sans text-4xl md:text-5xl font-bold mb-3 text-white group-hover:text-purple-400 transition-colors duration-300">MindSpace.</h2>
-                                <p class="text-slate-400 leading-relaxed text-sm md:text-base">
+                                <h2 class="font-sans text-4xl md:text-5xl font-bold mb-3 text-white group-hover:text-purple-400 transition-colors duration-300" data-key="app4_title">MindSpace.</h2>
+                                <p class="text-slate-400 leading-relaxed text-sm md:text-base" data-key="app4_desc">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation. Digital journaling with mood tracking and insights.
                                 </p>
                             </div>
                             
                             <div class="mt-6">
                                 <button class="magnetic-btn inline-flex items-center gap-3 px-6 py-3 border border-white/20 text-white/50 font-bold rounded-full cursor-not-allowed w-fit text-sm relative overflow-hidden group/btn">
-                                    <span class="relative z-10 flex items-center gap-2">
+                                    <span class="relative z-10 flex items-center gap-2" data-key="btn_experimental">
                                         <i class="fas fa-flask text-xs"></i>
                                         EXPERIMENTAL
                                     </span>
@@ -589,7 +583,7 @@
                                     <div class="w-3 h-3 rounded-full bg-purple-500/50 animate-pulse" style="animation-delay: 0.2s"></div>
                                     <div class="w-3 h-3 rounded-full bg-purple-500/30 animate-pulse" style="animation-delay: 0.4s"></div>
                                 </div>
-                                <div class="text-[10px] font-mono text-purple-400 tracking-widest">PROTOTYPING</div>
+                                <div class="text-[10px] font-mono text-purple-400 tracking-widest" data-key="stat_prototyping">PROTOTYPING</div>
                             </div>
                         </div>
                     </div> 
@@ -602,12 +596,93 @@
     <footer class="py-12 text-center relative z-20 border-t border-white/5 bg-black/50 backdrop-blur">
         <a href="index.html" class="inline-flex items-center gap-2 text-xs font-mono text-slate-500 hover:text-emerald-400 transition-colors mb-4">
             <i class="fas fa-arrow-left"></i>
-            BACK TO HOME
+            <span data-key="back_home">BACK TO HOME</span>
         </a>
         <p class="text-xs font-mono text-slate-600 tracking-wider">&copy; 2026 RHADZOR STUDIO. SEMARANG.</p>
     </footer>
 
     <script>
+        // Language Data
+        const langData = {
+            id: {
+                nav_apps: "APLIKASI",
+                nav_games: "PERMAINAN",
+                nav_contact: "KONTAK",
+                hero_title_1: "TOOLS THAT",
+                hero_title_2: "JUST WORK",
+                hero_desc: "Tanpa ribet, tanpa basa-basi—hanya alat yang membantu kamu tetap teratur dan mengendalikan segalanya.",
+                app1_title: "KALEINDO.",
+                app1_desc: "Kalender Indonesia terlengkap. Dilengkapi tanggal Hijriah & Jawa (Weton), Hari Libur Nasional, tema yang dapat dikustomisasi, dan catatan terintegrasi. <br>Sederhana & indah.",
+                btn_launch: "BUKA APLIKASI",
+                stat_users: "PENGGUNA AKTIF",
+                stat_rating: "RATING",
+                app2_title: "Nolkan.",
+                app2_desc: "Uangmu, aturanmu. Alokasikan setiap rupiah. Lacak setiap pengeluaran. Lihat persis ke mana uangmu pergi. Tanpa kebingungan, kendali penuh.",
+                btn_coming_soon: "SEGERA HADIR",
+                stat_beta: "DAFTAR BETA",
+                app3_title: "TaskFlow.",
+                app3_desc: "Manajemen tugas pintar dengan prioritas berbasis AI. Atur jadwalmu dengan lebih efisien dan produktif.",
+                btn_development: "DALAM PENGEMBANGAN",
+                stat_building: "MEMBANGUN...",
+                app4_title: "MindSpace.",
+                app4_desc: "Jurnal digital dengan pelacakan suasana hati dan wawasan. Catat perjalanan mentalmu dengan cara yang modern.",
+                btn_experimental: "EKSperimental",
+                stat_prototyping: "PROTOTIPE",
+                back_home: "KEMBALI KE BERANDA"
+            },
+            en: {
+                nav_apps: "APPS",
+                nav_games: "GAMES",
+                nav_contact: "CONTACT",
+                hero_title_1: "TOOLS THAT",
+                hero_title_2: "JUST WORK",
+                hero_desc: "No bloat, no BS—just tools that help you stay organized and in control.",
+                app1_title: "KALEINDO.",
+                app1_desc: "The ultimate Indonesian calendar. Complete with Hijri & Javanese (Weton) dates, National Holidays, customizable themes, and integrated notes. <br>Simple & beautiful.",
+                btn_launch: "LAUNCH APP",
+                stat_users: "ACTIVE USERS",
+                stat_rating: "RATING",
+                app2_title: "Nolkan.",
+                app2_desc: "Your money, your rules. Assign every dollar. Track every expense. See exactly where your money goes. Zero confusion, full control.",
+                btn_coming_soon: "COMING SOON",
+                stat_beta: "BETA SIGNUP",
+                app3_title: "TaskFlow.",
+                app3_desc: "Smart task management with AI prioritization. Organize your schedule more efficiently and productively.",
+                btn_development: "IN DEVELOPMENT",
+                stat_building: "BUILDING...",
+                app4_title: "MindSpace.",
+                app4_desc: "Digital journaling with mood tracking and insights. Record your mental journey in a modern way.",
+                btn_experimental: "EXPERIMENTAL",
+                stat_prototyping: "PROTOTYPING",
+                back_home: "BACK TO HOME"
+            }
+        };
+
+        // Load stored language from index.html
+        function loadLanguage() {
+            const storedLang = localStorage.getItem('rhadzor-lang') || 'id';
+            setLang(storedLang);
+        }
+
+        function setLang(lang) {
+            document.querySelectorAll('[data-key]').forEach(el => {
+                const key = el.getAttribute('data-key');
+                if (langData[lang][key]) {
+                    if (el.classList.contains('glitch-text')) {
+                        el.setAttribute('data-text', langData[lang][key]);
+                    }
+                    el.innerHTML = langData[lang][key];
+                }
+            });
+        }
+
+        // Listen for storage changes (if user changes lang in index.html while this is open)
+        window.addEventListener('storage', (e) => {
+            if (e.key === 'rhadzor-lang') {
+                setLang(e.newValue || 'id');
+            }
+        });
+
         // Glitch text setup
         document.querySelectorAll('.glitch-text').forEach(el => {
             el.setAttribute('data-text', el.innerText);
@@ -710,9 +785,34 @@
             });
         });
 
+        // GSAP Entrance Animations (like games.html)
+        gsap.registerPlugin(ScrollTrigger);
+
+        // Hero entrance animations
+        gsap.from(".hero-section > *", {
+            y: 50,
+            opacity: 0,
+            duration: 1,
+            stagger: 0.2,
+            ease: "power3.out",
+            delay: 0.2
+        });
+
+        // Cards stagger entrance
+        gsap.from(".card-sticky-container", {
+            y: 100,
+            opacity: 0,
+            duration: 0.8,
+            stagger: 0.15,
+            ease: "power3.out",
+            scrollTrigger: {
+                trigger: ".cards-wrapper",
+                start: "top 85%"
+            }
+        });
+
         // Scroll Animation - Stack Fix
         if (!prefersReducedMotion) {
-            gsap.registerPlugin(ScrollTrigger);
             const lenis = new Lenis({ duration: 1.2, smooth: true });
             
             function raf(time) { 
@@ -741,6 +841,9 @@
                 }
             });
         }
+
+        // Load language on page load
+        loadLanguage();
     </script>
 </body>
 </html>
