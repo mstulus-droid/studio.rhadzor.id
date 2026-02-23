@@ -642,37 +642,46 @@
                             <div>
                                 <div class="flex items-center gap-3 mb-4">
                                     <div class="w-10 h-10 rounded-lg bg-blue-500/20 border border-blue-500/30 flex items-center justify-center text-blue-400 status-pulse">
-                                        <i class="fas fa-tasks"></i>
+                                        <i class="fas fa-barcode"></i>
                                     </div>
                                     <span class="font-mono text-xs text-blue-400 tracking-wider">MODULE_03</span>
                                 </div>
-                                <h2 class="font-sans text-4xl md:text-5xl font-bold mb-3 text-white group-hover:text-blue-400 transition-colors duration-300" data-key="app3_title">TaskFlow.</h2>
+                                <h2 class="font-sans text-4xl md:text-5xl font-bold mb-3 text-white group-hover:text-blue-400 transition-colors duration-300" data-key="app3_title">PricePedia.</h2>
                                 <p class="text-slate-400 leading-relaxed text-sm md:text-base" data-key="app3_desc">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Smart task management with AI prioritization.
+                                    Catat harga belanja dalam hitungan detik lewat barcode, bandingkan antar toko, lihat riwayat perubahan harga, dan simpan sebagai PWA di homescreen.
                                 </p>
                             </div>
                             
                             <div class="mt-6">
-                                <button class="magnetic-btn inline-flex items-center gap-3 px-6 py-3 border border-white/20 text-white/50 font-bold rounded-full cursor-not-allowed w-fit text-sm relative overflow-hidden group/btn">
-                                    <span class="relative z-10 flex items-center gap-2" data-key="btn_development">
-                                        <i class="fas fa-clock text-xs"></i>
-                                        IN DEVELOPMENT
+                                <a href="https://pricepedia.rhadzor.id" target="_blank" class="magnetic-btn inline-flex items-center gap-3 px-6 py-3 bg-white text-black font-bold rounded-full hover:bg-blue-500 hover:text-white transition-all duration-300 active:scale-95 shadow-[0_0_20px_rgba(255,255,255,0.3)] hover:shadow-[0_0_30px_rgba(59,130,246,0.45)] w-fit text-sm group/btn">
+                                    <span class="relative z-10 flex items-center gap-2" data-key="btn_open_pricepedia">
+                                        <i class="fas fa-arrow-up-right-from-square text-xs"></i>
+                                        OPEN APP
                                     </span>
-                                    <div class="absolute inset-0 bg-blue-500/10 translate-y-full group-hover/btn:translate-y-0 transition-transform duration-300"></div>
-                                </button>
+                                </a>
                             </div>
                         </div>
 
                         <div class="relative w-full h-[45%] md:h-full overflow-hidden bg-gradient-to-br from-slate-900 to-black border-t md:border-t-0 md:border-l border-white/10 group-hover:border-blue-500/20 transition-colors duration-500">
                             <div class="absolute inset-0 bg-blue-600/10 mix-blend-overlay group-hover:bg-blue-600/20 transition-colors duration-500"></div>
-                            <img src="https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=800&auto=format&fit=crop&q=80" alt="TaskFlow Preview" class="w-full h-full object-cover object-center opacity-40 md:opacity-30 grayscale group-hover:grayscale-0 group-hover:opacity-60 group-hover:scale-105 transition-all duration-700">
+                            <img src="PricePedia.webp" alt="PricePedia Preview" class="w-full h-full object-cover object-center opacity-80 md:opacity-70 grayscale-[20%] group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700">
                             
-                            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center">
-                                <div class="w-24 h-24 rounded-full border-2 border-blue-500/30 flex items-center justify-center mb-4 mx-auto relative">
-                                    <div class="absolute inset-0 rounded-full border-t-2 border-blue-500 animate-spin"></div>
-                                    <i class="fas fa-code text-2xl text-blue-400"></i>
+                            <div class="absolute top-4 left-4 right-4 flex items-center justify-between z-20">
+                                <div class="bg-black/60 backdrop-blur px-3 py-2 rounded-lg border border-white/10">
+                                    <div class="text-[10px] font-mono text-blue-300 mb-1" data-key="stat_scan">BARCODE SCAN</div>
+                                    <div class="text-sm font-bold font-mono">REAL-TIME</div>
                                 </div>
-                                <div class="text-[10px] font-mono text-blue-400 tracking-widest" data-key="stat_building">BUILDING...</div>
+                                <div class="bg-black/60 backdrop-blur px-3 py-2 rounded-lg border border-white/10">
+                                    <div class="text-[10px] font-mono text-emerald-300 mb-1" data-key="stat_compare">COMPARE PRICE</div>
+                                    <div class="text-sm font-bold font-mono">MULTI STORE</div>
+                                </div>
+                            </div>
+
+                            <div class="absolute bottom-4 left-4 right-4">
+                                <div class="inline-flex items-center gap-2 px-3 py-2 rounded-full bg-blue-500/20 border border-blue-400/30 text-[10px] font-mono tracking-widest text-blue-200 backdrop-blur" data-key="stat_pwa_ready">
+                                    <i class="fas fa-mobile-screen-button"></i>
+                                    PWA READY
+                                </div>
                             </div>
                         </div>
                     </div> 
@@ -760,10 +769,12 @@
                 app2_desc: "Uangmu, aturanmu. Alokasikan setiap rupiah. Lacak setiap pengeluaran. Lihat persis ke mana uangmu pergi. Tanpa kebingungan, kendali penuh.",
                 btn_coming_soon: "SEGERA HADIR",
                 stat_beta: "DAFTAR BETA",
-                app3_title: "TaskFlow.",
-                app3_desc: "Manajemen tugas pintar dengan prioritas berbasis AI. Atur jadwalmu dengan lebih efisien dan produktif.",
-                btn_development: "DALAM PENGEMBANGAN",
-                stat_building: "MEMBANGUN...",
+                app3_title: "PricePedia.",
+                app3_desc: "Catat harga belanja dalam hitungan detik lewat barcode, bandingkan harga antar toko, cek riwayat perubahan harga, lalu pasang sebagai aplikasi PWA.",
+                btn_open_pricepedia: "BUKA APLIKASI",
+                stat_scan: "SCAN BARCODE",
+                stat_compare: "BANDINGKAN HARGA",
+                stat_pwa_ready: "SIAP PWA",
                 app4_title: "MindSpace.",
                 app4_desc: "Jurnal digital dengan pelacakan suasana hati dan wawasan. Catat perjalanan mentalmu dengan cara yang modern.",
                 btn_experimental: "EKSperimental",
@@ -788,10 +799,12 @@
                 app2_desc: "Your money, your rules. Assign every dollar. Track every expense. See exactly where your money goes. Zero confusion, full control.",
                 btn_coming_soon: "COMING SOON",
                 stat_beta: "BETA SIGNUP",
-                app3_title: "TaskFlow.",
-                app3_desc: "Smart task management with AI prioritization. Organize your schedule more efficiently and productively.",
-                btn_development: "IN DEVELOPMENT",
-                stat_building: "BUILDING...",
+                app3_title: "PricePedia.",
+                app3_desc: "Capture grocery prices in seconds with barcode scan, compare prices across stores, track price history, and install it as a PWA.",
+                btn_open_pricepedia: "OPEN APP",
+                stat_scan: "BARCODE SCAN",
+                stat_compare: "COMPARE PRICE",
+                stat_pwa_ready: "PWA READY",
                 app4_title: "MindSpace.",
                 app4_desc: "Digital journaling with mood tracking and insights. Record your mental journey in a modern way.",
                 btn_experimental: "EXPERIMENTAL",
